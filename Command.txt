@@ -1,0 +1,8 @@
+19th April
+------
+Mkdir filespdf
+
+Creating Multiple file using single command using Power shell
+1..5 | ForEach-Object {
+   New-Item -Path D:\devops\MyProject\devops27thmarch\filespdf -Name ('fn_{0}.pdf' -f $_) -ItemType 'file'
+ }
